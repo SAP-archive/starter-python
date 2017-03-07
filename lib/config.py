@@ -1,0 +1,6 @@
+config = {
+    'recast': {
+        'token': '',
+        'language': ''
+    }
+}
