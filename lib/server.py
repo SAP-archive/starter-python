@@ -4,11 +4,15 @@ from wsgiref.simple_server import make_server
 from config import config
 from bot import bot
 
-router = Router()
-# view names are composed of modulename:function
-router.add_route('/', bot, method='GET')
+def run():
+    router = Router()
 
-application = router.as_wsgi
+    router.add_route('/', bot, method='GET')
 
-if __name__=='__main__':
-    make_server('', config['port'], application).serve_forever()
+    application = router.as_wsgi
+
+    httpd = make_server('', config['port'], application)
+
+    print 'Bot running on port', config['port']
+
+    httpd.serve_forever()

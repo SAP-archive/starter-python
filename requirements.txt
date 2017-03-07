@@ -1,1 +1,1 @@
-recastai
+recastai==3.0
