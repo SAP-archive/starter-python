@@ -4,10 +4,15 @@ from wsgiref.simple_server import make_server
 from config import config
 from bot import bot
 
+# TODO: think around that
+# Maybe use another router
+def handler(request):
+    return bot(request.body)
+
 def run():
     router = Router()
 
-    router.add_route('/', bot, method='GET')
+    router.add_route('/', handler, method='GET')
 
     application = router.as_wsgi
 
