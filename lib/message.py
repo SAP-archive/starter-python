@@ -1,5 +1,7 @@
 import recastai
 
+from config import config
+
 def replyMessage(message):
     request = recastai.Request(config['recast']['token'])
 
