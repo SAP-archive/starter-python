@@ -8,7 +8,7 @@ def replyMessage(message):
     text = message.content.attachment.content
     senderId = message.senderId
 
-    response = request.converseText(text, senderId)
+    response = request.converse_text(text, senderId)
 
     for reply in response.replies:
         message.addReply({ 'type': 'text', 'content': reply })
