@@ -7,7 +7,7 @@ from .bot import bot
 def run():
     router = Router()
 
-    router.add_route('/', bot, method='GET')
+    router.add_route('/', bot, method='POST')
 
     application = router.as_wsgi
 
