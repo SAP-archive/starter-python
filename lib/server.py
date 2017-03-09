@@ -1,3 +1,7 @@
+#coding: utf-8
+
+from __future__ import print_function
+
 from simplerouter import Router
 from wsgiref.simple_server import make_server
 
@@ -13,6 +17,6 @@ def run():
 
     httpd = make_server('', config['port'], application)
 
-    print 'Bot running on port', config['port']
+    print('Bot running on port', config['port'])
 
     httpd.serve_forever()

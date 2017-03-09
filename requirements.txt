@@ -1,1 +1,1 @@
-recastai==3.0
+git+https://github.com/RecastAI/SDK-python.git@develop#egg=recastai==3.0.0
