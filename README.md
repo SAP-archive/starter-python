@@ -53,7 +53,7 @@ To complete your Recast.AI `token` and your `language`:
 
 #### Run locally
 
-`REQUEST\_TOKEN=xxx LANGUAGE=xxx PORT=xxx python server.py`
+`REQUEST_TOKEN=xxx LANGUAGE=xxx PORT=xxx python server.py`
 
 > **Note:** Next steps, only if you have connected your bot to channels, using the Bot Connector tool
 
