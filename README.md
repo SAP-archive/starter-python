@@ -41,7 +41,7 @@ easy_install `cat requirements.txt`
 
 Open the `bot/__init__.py` and set your `REQUEST_TOKEN` and `LANGUAGE`.
 
-You will be able to override those environment variables via the command line.
+This configuration will be stored as environment variables, this means that you will be able to override them via the command line.
 
 To complete your Recast.AI `token` and your `language`:
 
