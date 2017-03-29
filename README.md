@@ -1,4 +1,4 @@
-# Recast.AI starter kit NodeJS
+# Recast.AI starter kit Python
 
 A starter kit for developing bots on the [Recast.AI](https://recast.ai) platform.
 
@@ -39,15 +39,16 @@ easy_install `cat requirements.txt`
 
 #### Create the config file
 
-Open the `bot/\_\_init\_\_.py` and set your `REQUEST\_TOKEN` and `LANGUAGE`.
+Open the `bot/__init__.py` and set your `REQUEST_TOKEN` and `LANGUAGE`.
 
 You will be able to override those environment variables via the command line.
 
 To complete your Recast.AI `token` and your `language`:
-	- Go to your bot page
-	- Click on the settings icon (the gear on the right of your screen)
-	- Copy your `request token`
-	- Set the default language of your bot as either `'en'`, `'fr'`, ...
+
+- Go to your bot page
+- Click on the settings icon (the gear on the right of your screen)
+- Copy your `request token`
+- Set the default language of your bot as either `'en'`, `'fr'`, ...
 
 
 #### Run locally
@@ -67,10 +68,10 @@ To complete your Recast.AI `token` and your `language`:
 
 Code | Documentation
 ------------ | -------------
-Receiving messages | [The Recast.AI SDK](https://github.com/RecastAI/SDK-Python/wiki/03---Receive-and-send-messages) - connect
-Sending messages | [The Recast.AI SDK](https://github.com/RecastAI/SDK-Python/wiki/03---Receive-and-send-messages) - connect
-Rich messaging | See the different [payload message](https:github.com/RecastAI/SDK-Python/wiki/04---Message-payload)
-Manage the conversation | [The Recast.AI SDK](https://github.com/RecastAI/SDK-Python/wiki/02---Manage-conversation) - converse
+Receiving messages | [The Recast.AI SDK](https://github.com/RecastAI/SDK-Python/wiki/03---Receive-and-send-messages)
+Sending messages | [The Recast.AI SDK](https://github.com/RecastAI/SDK-Python/wiki/03---Receive-and-send-messages)
+Rich messaging | [Messages payloads](https:github.com/RecastAI/SDK-Python/wiki/04---Message-payload)
+Manage the conversation | [The Recast.AI SDK](https://github.com/RecastAI/SDK-Python/wiki/02---Manage-conversation)
 
 
 ## More
