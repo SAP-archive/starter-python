@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 Using easy\_install
 ```bash
-easy_install ``cat requirements.txt``
+easy_install `cat requirements.txt`
 ```
 
 
