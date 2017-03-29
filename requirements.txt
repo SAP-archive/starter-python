@@ -1,2 +1,5 @@
-recastai~=3.0.0
+# Server
 flask~=0.12.0
+
+# APIs
+recastai~=3.0.0
