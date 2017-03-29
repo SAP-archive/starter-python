@@ -1,3 +1,4 @@
 git+https://github.com/RecastAI/SDK-python.git@develop#egg=recastai==3.0.0
 
-flask~=0.12
+recastai~=3.0.0
+flask~=0.12.0
