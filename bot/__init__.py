@@ -1,7 +1,6 @@
 # coding: utf-8
 
-import os
+from .bot import bot
 
-os.environ.setdefault('REQUEST_TOKEN', '')
-os.environ.setdefault('LANGUAGE', 'en')
-os.environ.setdefault('PORT', '5000')
+
+__all__ = ['bot']

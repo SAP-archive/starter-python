@@ -1,10 +1,10 @@
 #coding: utf-8
 
 import os
+import config
 
 from flask import Flask, request
-
-from bot.bot import bot
+from bot import bot
 
 
 app = Flask(__name__)
