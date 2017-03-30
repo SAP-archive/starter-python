@@ -39,7 +39,17 @@ easy_install `cat requirements.txt`
 
 #### Create the config file
 
-Open the `bot/__init__.py` and set your `REQUEST_TOKEN` and `LANGUAGE`.
+Create `config.py` at the root of your project.
+
+Copy paste the following configuration:
+
+```python
+import os
+
+os.environ.setdefault('REQUEST_TOKEN', '')
+os.environ.setdefault('LANGUAGE', 'en')
+os.environ.setdefault('PORT', '5000')
+```
 
 This configuration will be stored as environment variables, this means that you will be able to override them via the command line.
 
