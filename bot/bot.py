@@ -14,14 +14,13 @@ def bot(payload):
   response = request.analyse_text(message.content)
 
   intent = response.intent
-  intent_slug = intent.slug if intent else None
 
-  if intent_slug is None:
+  if intent is None:
     reply = "I'm sorry but I don't understand what you are talking about"
   else:
-    reply = 'I understand that you talk about {}'.format(intent_slug)
+    reply = 'I understand that you talk about {}'.format(intent.slug)
 
-  replies = [{'type': 'text', 'content': reply }]
+  replies = [{'type': 'text', 'content': reply}]
   connect.send_message(replies, message.conversation_id)
 
   return jsonify(status=200)
